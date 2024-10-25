@@ -11,7 +11,6 @@ with DAG(dag_id="triggering_dag", schedule=None, start_date=datetime(2023, 1, 1)
         endpoint=f"api/v1/dags/hello_world/dagRuns",
         http_conn_id="http_conn",
         data={
-            "logical_date": "{{ logical_date }}",
-
+            "logical_date": "{{ logical_date }}"
         }
     )
