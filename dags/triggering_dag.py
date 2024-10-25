@@ -13,7 +13,5 @@ with DAG(dag_id="triggering_dag", schedule=None, start_date=datetime(2023, 1, 1)
         data={
             "logical_date": "{{ logical_date }}",
 
-            # if you want to add parameters:
-            # params: '{"foo": "bar"}'
         }
     )
